@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>arrive</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let M = [7, 66, 55, 4, 88, 1, 8, 99, 3];
+
+  let Min;
+  Min = M[0]; // Минимум
+  let Min_ind;
+  Min_ind = 0; // Индекс Min
+
+  document.write('Массив: <br>');
+
+  let i;
+  for (i = 1; i < M.length; i++) {
+      if (M[i] < Min) {
+          Min = M[i];
+          Min_ind = i;
+      } // if
+      document.write(M[i] + " ");
+  } //for
+  document.write('<br>Минимум: ' + Min);
+  document.write('<br>Индекс: ' + Min_ind);
+</script>
+</body>
+</html>
