@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>arrive_double_max</title>
+</head>
+<body>
+  <script>
+      'use strict';
+      let M = [0, 0, 0];
+
+      M[0] = [1, 2, 3];
+      M[1] = [7, 8, 9];
+      M[2] = [6, 5, 4];
+
+      Max = [0][0]; //Максимум
+      Ind = [0, 0]; //Его индекс
+
+      let i;
+      for (i = 0; i < M.length; i++) {
+          let j;
+          for (j = 0; j < M[i].length; j++) {
+              if (M[i][j] > Max) {
+                  Max = M[i][j];
+                  Ind[0] = i;
+                  Ind[1] = j;
+              }
+          }
+      }
+      document.write('Max: ' + Max + '<br>');
+      document.write('Index: ' + Ind[0] + ' ' + Ind[1]);
+  </script>
+</body>
+</html>

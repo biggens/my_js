@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>max_element_arrive</title>
+</head>
+<body>
+  <script>
+      'use strict';
+      let M = [23, 43, 2, 11, 345, 435, 3, 16];
+
+      let Max;
+      Max = M[0];
+      let Max_ind;
+      Max_ind = 0;
+
+      let i;
+      for(i = 1; i < M.length; i++) {
+          if(M[i] > Max) {
+              Max = M[i];
+              Max_ind = i;
+          }
+          document.write(M[i] + ',');
+      }
+      document.write('<br>Max: ' + Max + '<br>');
+      document.write('Index: ' + Max_ind);
+  </script>
+</body>
+</html>
