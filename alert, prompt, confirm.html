@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>alert,prompt,confirm</title>
+</head>
+<body>
+  <script>
+    'use strict';
+    let name = prompt('Назовите Ваша имя?', 'имя');
+    let result = confirm('Ваше имя:' + name + '?');
+    if (result === true) {
+        alert('Ваше имя правильное' + name);
+    } else {
+        alert('Ваше имя не правильное!');
+    }
+  </script>
+</body>
+</html>
