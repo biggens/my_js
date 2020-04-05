@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lesson_1.1</title>
+</head>
+<body>
+  <!--<script>
+      'use script';
+
+
+      // 1 вариант решения задачи
+     /* var scoreTeamJohn = 89 + 120 + 103;
+      var scoreTeamMike = 116 + 94 + 123;
+
+      if (scoreTeamJohn > scoreTeamMike) {
+          console.log('Команда Джона выйграла со счетом - ' + scoreTeamJohn);
+      } else {
+          console.log('Команда Майка выйграла со счетом - ' + scoreTeamMike);
+      }*/
+      // 2 вариант решения
+      /*var scoreTeamJohn = 89 + 120 + 103;
+      var scoreTeamMike = 16 + 94 + 123;
+      var scoreTeamMary = 97 + 134 + 10;
+
+      if (scoreTeamJohn > scoreTeamMike && scoreTeamJohn > scoreTeamMary) {
+          console.log('Команда Джона выйграла со счетом - ' + scoreTeamJohn);
+      } else if (scoreTeamMike > scoreTeamJohn && scoreTeamMike > scoreTeamMary) {
+          console.log('Команда Майка выйграла со счетом - ' + scoreTeamMike);
+      } else if (scoreTeamMary > scoreTeamJohn && scoreTeamMary > scoreTeamMike) {
+          console.log('Команда Мари выйграла со счетом - ' + scoreTeamMary);
+      }*/
+
+  </script>-->
+  <script>
+      'use script';
+      var scoreJohn = 89 + 120 + 103;
+      var scoreMike = 116 + 94 + 123;
+      var scoreMary = 97 + 134 + 105;
+
+      if (scoreJohn > scoreMike) {
+          console.log('win is John' + scoreJohn);
+      } else {
+          console.log('win is Mike' + scoreMike);
+      }
+
+      if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
+          console.log('win is John' + scoreJohn);
+      } else if (scoreMike > scoreJohn && scoreMike > scoreMary) {
+          console.log('Win is  Mike' + scoreMike);
+      } else if (scoreMary > scoreJohn && scoreMary > scoreMike) {
+          console.log('win is Mary' + scoreMary);
+      }
+
+      var winJohn = (scoreJohn > scoreMike && scoreJohn > scoreMary);
+      var winMike = (scoreMike > scoreJohn && scoreMike > scoreMary);
+      var winMary = (scoreMary > scoreJohn && scoreMary > scoreMike);
+
+      switch (winJohn, winMike, winMary) {
+          case(winJohn):
+              console.log('win is John' + scoreJohn);
+              break;
+          case(winMike):
+              console.log('win is Mike ' + scoreMike);
+              break;
+          case(winMary):
+              console.log('win is Mary ' + scoreMary);
+              break;
+          default:
+              console.log('nothing');
+
+      }
+  </script>
+</body>
+</html>
