@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lesson_2</title>
+</head>
+<body>
+  <script>
+      'use strict';
+      var phrase = prompt('Введите фразу', '');
+
+      function countLit() {
+          var count = 0;
+          var words = phrase.toLowerCase();
+          var boxLit = ['б', 'в', 'г', 'д', 'ж', 'з', 'й', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч', 'ш', 'щ'];
+          for (var i = 0; i < words.length; i++) {
+              for (var j = 0; j < boxLit.length; j++) {
+                  if (words[i] === boxLit[j]) {
+                      count += 1;
+                      break;
+                  }
+              }
+          }
+          return count ? count : 'НОЛЬ';
+      }
+
+      console.log('Согласных букв :' + countLit());
+  </script>
+  <!--<script>
+      'use script';
+      var phrase = prompt('Введите фразу', '');
+
+      function counterLit () {
+          var wordNew = phrase.toLowerCase();
+          var count = 0;
+          var Dictionary = {
+              'а': true,
+              'у': true,
+              'о': true,
+              'ы': true,
+              'и': true,
+              'э': true,
+              'я': true,
+              'ю': true,
+              'ё': true,
+              'е': true
+          }
+          for (var i = 0; i < wordNew.length; i++) {
+              var C = wordNew.charAt(i);
+              if (C in Dictionary) {
+                  count++;
+              }
+          }
+          return count;
+      }
+      console.log('глассных букв :' + counterLit());
+  </script>-->
+  <!--<script>
+    var phrase = prompt ('Введите фразу', '');
+
+    function contLit() {
+        var count = 0;
+        var word = phrase.toLowerCase();
+        var boxLit = ['а', 'у', 'о', 'ы', 'и', 'э', 'я', 'ю', 'ё', 'е'];
+    for (var i = 0; i < word.length; i++) {
+        var C = word.charAt(i);
+        if (boxLit.indexOf(C) !== -1) {
+            count++;
+        }
+    }
+    return count;
+    }
+
+    console.log('гласных букв :' + contLit());
+  </script>-->
+  <!--<script>
+    'use script';
+    var phrase = prompt('Введите фразу', '');
+
+    function contLit() {
+        var count = 0;
+        var word = phrase.toLowerCase();
+        var boxLit = 'ауоыиэяюёе';
+        for(var i = 0; i < word.length; i++) {
+            var C = word.charAt(i);
+            if (boxLit.indexOf(C) !== -1) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    console.log('гласных букв :' + contLit());
+  </script>-->
+  <!--<script>
+      'use script';
+
+     var phrase = prompt('Введите фразу', '');
+
+     function counterLit() {
+         var boxLit = {
+             'а':true,
+             'у':true,
+             'о':true,
+             'ы':true,
+             'и':true,
+             'э':true,
+             'я':true,
+             'ю':true,
+             'ё':true,
+             'е':true
+         }
+         var word = phrase.toLowerCase();
+         var count = 0;
+
+         for (var i = 0; i < word.length; i++) {
+             var C = word.charAt(i);
+             if(C in boxLit) {
+                 count++;
+             }
+         }
+         return count;
+     }
+     console.log('гласных букв :' + counterLit());
+  </script>-->
+  <!--<script>
+    'use script';
+  var phrase = prompt('Введите фразу', '');
+
+  function counterLit() {
+      var boxLit = ['а', 'у', 'о', 'ы', 'и', 'э', 'я', 'ю', 'ё', 'е'];
+      var word = phrase.toLowerCase();
+      var count = 0;
+
+      for (var i = 0; i < word.length; i++) {
+          var C = word.charAt(i);
+          if (boxLit.indexOf(C) !== -1) {
+              count++;
+          }
+      }
+      return count;
+  }
+
+  console.log('гласных букв ' + counterLit());
+  </script>-->
+  <!--<script>
+    'use script';
+    var phrase = prompt('Введите фразу', '');
+
+    function counterLit() {
+        var boxLit = 'ауоыиэяюёе';
+        var word = phrase.toLowerCase();
+        var count = 0;
+
+        for(var i = 0; i < word.length; i++) {
+            var C = word.charAt(i);
+            if (boxLit.indexOf(C) !== -1) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    console.log('гласных букв :' + counterLit());
+  </script>-->
+</body>
+</html>

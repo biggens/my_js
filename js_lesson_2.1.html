@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lesson_2.1</title>
+</head>
+<body>
+  <script>
+      'use script';
+      var firstName = prompt('Ваше имя:', '');
+          if (firstName == "", null, (isFinite(firstName))) {
+              do {
+                  var errorName = prompt('Попробуйте еще раз', '');
+              } while ((errorName == "") || (errorName == null) || (isFinite(firstName)));
+          }
+      var lastName = prompt('Ваша фамилия:', '');
+      var patronymic = prompt('Ваше отчество:', '');
+      var fullName = firstName + ' ' + lastName + ' ' + patronymic;
+      var Age = prompt('Ваш возраст?', '');
+      if (Age !== (isFinite(Age))) {
+          do {
+              var errorAge = prompt('Попробуйте еще раз', '');
+              var Age2 = parseInt(errorAge);
+          } while (isNaN(Age2));
+      }
+      var gender = confirm('Ваш пол мужской?');
+      if (gender) {
+          gender = 'мужской'
+      } else {
+          gender = 'женский'
+      }
+      alert('Ваше ФИО:' + ' ' + fullName +
+          '\n' + 'Ваш возраст:' + ' ' + Age +
+          '\n' + 'Ваш пол:' + ' ' + gender);
+
+      // предописанный класс String
+    // свойство length
+    //charAt(index)
+    //[index]
+    // substr(начало)
+    // substr(начало, длина)
+    //slice(начало)
+    // slice(начало, конец)
+    // split('', ' ')
+    //toLowerCase();
+    //toUpperCase();
+    // indexOf(подстроку) если не найдена, то возар -1
+      /*var s = 'Утро вечера мудренене';
+      console.log(s.length);
+      console.log(s.indexOf('е'));
+    // indexOf(подстроку, начало)
+    console.log(s.indexOf('е', 10));
+    // lastIndexOf(подстроку)
+      console.log(s.lastIndexOf('е'));
+    //lastIndexOf(подстроку, начало)
+    console.log(s.lastIndexOf('е', 15));
+    //replace(старая, новая)
+    console.log(s.replace('Утро', 'день'));
+    //trim() удаляет вначале и вконце строки все пробельные симвоы
+    var s2 = '\n\r\t\v hello \n\r\t\v';
+    console.log(s2);
+      console.log(s2.trim());*/
+
+  </script>
+</body>
+</html>
