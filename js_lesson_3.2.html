@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lesson_3.2</title>
+</head>
+<body>
+  <!--<script>
+    'use script';
+   function isNumeric(n) {
+       return !isNaN(parseFloat(n)) && isFinite(n);
+   }
+
+   var arr = [];
+   var sum = 0;
+
+   do {
+       var input = prompt('Введите суммируемые числа', '');
+       arr.push(+input);
+   } while (isNumeric(input));
+
+   arr.length = arr.length - 1;
+
+   for (var i = 0; i < arr.length; i++) {
+       sum += arr[i];
+   }
+
+   if (arr.length === 0) {
+       alert('Вы не ввели ни одного числа')
+   } else {
+       alert('Сумма чисел равна: ' + sum + '\n' + 'Введенные числа: ' + arr);
+   }
+  </script>-->
+
+  <script>
+    'use strict';
+
+    function isNumeric(n) {
+        return !isNaN(n) && isFinite(n);
+    }
+
+    var arr = [];
+    var sum = 0;
+
+    do {
+        var input = prompt('Введите суммируемые числа', '');
+        arr.push(+input);
+    } while (isNumeric(input));
+
+    arr.length = arr.length - 1;
+
+    for(var i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+
+    if (arr.length === 0) {
+        alert('Вы не ввели ни каких чисел');
+    } else {
+        alert('Сумма чисел равна: ' + sum + '\n' + 'Вводимые числа: ' + arr);
+    }
+  </script>
+</body>
+</html>
